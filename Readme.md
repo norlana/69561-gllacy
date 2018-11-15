@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Светлана Нехай](https://up.htmlacademy.ru/htmlcss/23/user/69561).
-* Наставник: `Неизвестно`.
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
