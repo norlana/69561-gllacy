@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Онлайн-магазин мороженого "Глэйси"</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="header">
+  
+   <h1 class="visually-hidden">"Глэйси" - мороженое с доставкой на дом</h1>
+   
+    <nav class="header-nav">
+      <a class="logo">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
+      </a>
+      
+      <!-- Main-menu START -->
+      <ul class="main-menu">
+        <li class="main-menu-item">
+          <a href="#">Каталог</a>
+          <ul class="submenu">
+            <li class="submenu-item highlight"><a href="#">Новинки</a></li>
+            <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
+            <li class="submenu-item"><a href="#">Щербеты</a></li>
+            <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
+            <li class="submenu-item"><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li class="main-menu-item"><a href="#">Доставка и оплата</a></li>
+        <li class="main-menu-item"><a href="#">О Компании</a></li>
+      </ul>
+      <!-- Main-menu END -->
+
+      <!-- User-menu START -->
+      <ul class="user-menu">
+        <li class="user-menu-item">
+        <button class="btn search-btn" href="#"></button>
+        </li>
+        <li class="user-menu-item">
+        <a class="login-link" href="#">Вход</a>
+        </li>
+        <li class="user-menu-item">
+        <a class="basket-link" href="#">Пусто</a>
+        </li>
+      </ul>
+      <!-- User-menu END -->
+    </nav>
+
+    <!-- Contact-block-top START-->
+    <p class="contact-block-top highlight">
+      <span class="mode disp-block">с 10 до 20, ежеденевно</span>
+      <span class="phone">8 812 450-25-25</span>
+    </p>
+    <!-- Contact-block END-->
+  </header>
+
+  <main class="container">
+    
+    <section class="hero">
+    <h2 class="visually-hidden">Слайдер</h2>
+    <!-- Here the place for a slider -->
+    </section>
+    
+    <section class="banners">
+    <h2 class="visually-hidden">Акции и бонусы</h2>  
+    
+    </section>
+    
+    <section class="hits-list">
+    <h2 class="visually-hidden">Лучшие вкусы</h2>
+     
+      
+    </section>
+    
+    <!-- Features-block START-->
+    <section class="features">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="highlight">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+      <ul class="features-list">
+        <li class="features-item">
+          <h3 class="visually-hidden">Идеальный вкус</h3>
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        </li>
+        <li class="features-item">
+          <h3 class="visually-hidden">Отменное качество</h3>
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        </li>
+        <li class="features-item">
+          <h3 class="visually-hidden">Эко-ингредиенты</h3>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </li>
+        <li class="features-item">
+          <h3 class="visually-hidden">Бережное отношение</h3>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Features-block END -->
+
+    <article class="blog-news">
+      <h2>Новое в нашем блоге</h2>
+      <a href="#">
+        <p>10 способов сервировки фруктовых щербетов к столу</p>
+      </a>
+    </article>
+
+    <!-- Subscribe-block START -->
+    <section class="subscribe-block">
+      <h2 class="visually-hidden">Новостная рассылка</h2>
+      <p class="subscribe-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+
+      <!-- There will be a subscription form -->
+
+    </section>
+    <!-- Subscribe-block END -->
+    
+    <section class="map-block">
+      <h2 class="visually-hidden">Адрес нашего офлайн-магазина</h2>
+    <!-- Here the map and the address will be placed -->
+    
+    </section>
+    
+    </main>
+
+    <footer class="footer">
+      <!-- Social links START -->
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+      </ul>
+      <!-- Social links END -->
+
+      <nav class="footer-nav">
+        <!-- Footer menu START -->
+        <ul class="footer-menu">
+          <li class="footer-menu-item"><a href="#">Для поставщиков</a></li>
+          <li class="footer-menu-item"><a href="#">Наши документы</a></li>
+          <li class="footer-menu-item"><a href="#">О производстве</a></li>
+          <li class="menu-item footer-menu-item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+        <!-- Footer menu END -->
+      </nav>
+
+      <!-- Copyright-block START -->
+      <ul class="footer-copyright">
+        <li class="copyright-item">
+        <a class="copyright-link" href="//htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="108" height="39"></a>
+        </li>
+        <li class="copyright-item">
+        Сделано в <a class="copyright-link" href="//htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
+        </li>
+      </ul>
+      <!-- Copyright-block END -->
+    </footer>
+
+    <!-- Search popup START -->
+    <section class="modal modal-serch">
+
+    </section>
+    <!-- Search popup END -->
+
+    <!-- Login popup START -->
+    <section class="modal modal-login">
+
+    </section>
+    <!-- Login popup END -->
+
+    <!-- Contact-form popup START -->
+    <section class="modal modal-contact">
+
+    </section>
+    <!-- Contact-form popup END -->
+
+</body>
+
 </html>
