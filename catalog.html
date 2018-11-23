@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Онлайн-магазин "Глэйси" | Каталог | Сливочное мороженое</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header class="header">
+  <header class="header container">
     <nav class="header-nav">
-      <a class="logo" href="index.html">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
-      </a>
-
+      <a class="logo-gllacy" href="index.html">
+        <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»"></a>
       <!-- Main-menu START -->
       <ul class="main-menu">
         <li class="main-menu-item">
@@ -69,7 +69,7 @@
     <!-- Filters START-->
     <section class="filters">
       <h2 class="visually-hidden">Фильтр продукции</h2>
-      <!-- Here will be html-forms for filters -->
+      <form action=""></form>
     </section>
     <!-- Filters END-->
 
@@ -80,7 +80,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
             </a>
           <p class="item-price">
             310 ₽<span> /кг</span>
@@ -89,7 +89,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
             </a>
           <p class="item-price">
             380 ₽<span> /кг</span>
@@ -98,7 +98,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
             </a>
           <p class="item-price">
             355 ₽<span> /кг</span>
@@ -107,7 +107,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
             </a>
           <p class="item-price">
             415 ₽<span> /кг</span>
@@ -116,7 +116,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочное с брусничным джемом </a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочное с брусничным джемом" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-5.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
             </a>
           <p class="item-price">
             325 ₽<span> /кг</span>
@@ -125,7 +125,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочно-черничное с цельными ягодами черники</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-6.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
             </a>
           <p class="item-price">
             410 ₽<span> /кг</span>
@@ -134,7 +134,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочно-лимонное с карамельной присыпкой</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
             </a>
           <p class="item-price">
             375 ₽<span> /кг</span>
@@ -143,7 +143,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочное с шоколадной стружкой</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочное с шоколадной стружкой" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-8.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
             </a>
           <p class="item-price">
             320 ₽<span> /кг</span>
@@ -152,7 +152,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочно-ванильное с кусочками шоколада</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-9.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
             </a>
           <p class="item-price">
             440 ₽<span> /кг</span>
@@ -161,7 +161,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочноe с ментоловым сиропом</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-10.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
             </a>
             <p class="item-price">
               435 ₽<span> /кг</span>
@@ -170,7 +170,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочное с кусочками черного шоколада</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
             </a>
           <p class="item-price">
             355 ₽<span> /кг</span>
@@ -179,7 +179,7 @@
         <li class="catalog-item">
           <h3><a href="catalog-item.html">Сливочное с мятным сиропом</a></h3>
             <a href="catalog-item.html">
-              <img src="//placehold.it/267x267" alt="Сливочное с мятным сиропом" width="267" height="267">
+              <img class="catalog-img" src="img/catalog-item-12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
             </a>
             <p class="item-price">
               420 ₽<span> /кг</span>
@@ -188,12 +188,34 @@
       </ul>
     </section>
     <!-- Catalog END-->
-
-    <div>
     
-    <!-- The place for a pagination -->
-    
+    <!--   Pagination START   -->
+    <div class="pagination-block">
+      <ul class="pagination">
+        <li class="pagination-item prev">
+          <a class="" href="#">&lt;</a>
+        </li>
+        <li class="pagination-item active">
+          <a class="" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">5</a>
+        </li>
+        <li class="pagination-item">
+          <a href="#">&gt;</a>
+        </li>
+      </ul>
     </div>
+    <!--   Pagination END   -->
     
     </main>
     
