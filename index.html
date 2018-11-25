@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Слайдер со сменой фона всей страницы</title>
@@ -28,7 +29,7 @@
             <ul class="submenu">
               <li class="submenu-item highlight"><a href="#">Новинки</a></li>
               <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
-              <li class="submenu-item"><a href="#">Щербеты</a></li>
+              <li class="submenu-item"><a href="#">Щербеты</a> </li>
               <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
               <li class="submenu-item"><a href="#">Мелорин</a></li>
             </ul>
@@ -41,7 +42,7 @@
         <!-- User-menu START -->
         <ul class="user-menu">
           <li class="user-menu-item">
-            <button class="btn search-btn" href="#"></button>
+            <button class="btn search-btn" type="submit"></button>
           </li>
           <li class="user-menu-item">
             <a class="login-link" href="#">Вход</a>
@@ -68,14 +69,17 @@
           <div class="slider">
             <div class="slides slide1">
               <p class="slides-title title1">Крем-брюле и пломбир с малиновым джемом</p>
+              <button class="button" type="button">Закрыть</button>
               <img class="slides-img img1" src="img/slide-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
             </div>
             <div class="slides slide2">
               <p class="slides-title title2">Шоколадный пломбир и лимонный сорбет</p>
+              <button class="button" type="button">Закрыть</button>
               <img class="slides-img img2" src="img/slide-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582">
             </div>
             <div class="slides slide3">
               <p class="slides-title title3">Пломбир с помадкой и клубничный щербет</p>
+              <button class="button" type="button">Закрыть</button>
               <img class="slides-img img3" src="img/slide-3.png" alt="Пломбир с помадкой и клубничный щербет" width="639" height="582">
             </div>
           </div>
@@ -91,20 +95,20 @@
       <!--   Slider END   -->
 
       <!--   Banners START    -->
-        <div class="banners-wrapper">
-          <section class="banners banner1">
-            <h2>Малинка даром!</h2>
-            <p class="banners-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="btn" href="#">Хочу варенье!</a>
-            <img class="banners-img banner1-img" src="img/index-banner-berry.jpg" alt="Малинка даром" width="560" height="229">
-          </section>
-          <section class="banners banner2">
-            <h2>Шоколадки даром!</h2>
-            <p class="banners-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
-            <a class="btn" href="#">Хочу шокладки!</a>
-            <img class="banners-img banner1-img"  src="img/index-banner-chocko.jpg" alt="Шоколадки даром" width="560" height="229">
-          </section>
-        </div>
+      <div class="banners-wrapper">
+        <section class="banners banner1">
+          <h2>Малинка даром!</h2>
+          <p class="banners-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="btn" href="#">Хочу варенье!</a>
+          <img class="banners-img banner1-img" src="img/index-banner-berry.jpg" alt="Малинка даром" width="560" height="229">
+        </section>
+        <section class="banners banner2">
+          <h2>Шоколадки даром!</h2>
+          <p class="banners-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+          <a class="btn" href="#">Хочу шокладки!</a>
+          <img class="banners-img banner1-img" src="img/index-banner-chocko.jpg" alt="Шоколадки даром" width="560" height="229">
+        </section>
+      </div>
 
       <!--   Banners END   -->
 
@@ -179,7 +183,7 @@
         </ul>
       </section>
       <!-- Features-block END -->
-      
+
       <!-- News-block START -->
       <div class="news-wrapper">
         <article class="blog-news">
@@ -197,21 +201,21 @@
         </section>
       </div>
       <!-- Subscribe-block END -->
-      </main>
-      
-      <!--  Map-block START  -->
-      <section class="map-block">
-        <h2 class="visually-hidden">Адрес нашего офлайн-магазина</h2>
-        <div class="address">
-          <p class="small">Адрес главного офиса и<br> офлайн магазина:
+    </main>
+
+    <!--  Map-block START  -->
+    <section class="map-block">
+      <h2 class="visually-hidden">Адрес нашего офлайн-магазина</h2>
+      <div class="address">
+        <p class="small">Адрес главного офиса и<br> офлайн магазина:
           <span class="highlight disp-block">ул. Большая Конюшенная</span><span class="highlight">19/8, Санкт-Петербург</span></p>
-          <p class="small">Для заказов по телефону:<span class="highlight disp-block">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
-          <a class="btn map-btn" href="#">Форма обратной связи</a> 
-        </div>
-        <img class="map" src="img/index-map.jpg" alt="" width="1200" height="430">
-      </section>
-      <!-- Map-block END -->
-      
+        <p class="small">Для заказов по телефону:<span class="highlight disp-block">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
+        <a class="btn map-btn" href="#">Форма обратной связи</a>
+      </div>
+      <img class="map" src="img/index-map.jpg" alt="" width="1200" height="430">
+    </section>
+    <!-- Map-block END -->
+
     <footer class="footer">
       <!-- Social links START -->
       <ul class="footer-social">
@@ -244,34 +248,70 @@
       </div>
 
       <!-- Copyright-block END -->
-    </footer>-->
+    </footer>
 
     <!-- Search popup START -->
-    <!--
-      <section class="modal modal-serch">
-    
-      </section>
--->
+    <section class="modal modal-serch">
+      <form class="serch-form" action="/echo" method="post">
+        <label class="visually-hidden" for="search-field"></label>
+        <input class="site-search" id="search-field" type="search" name="search" placeholder="Что ищем?">
+      </form>
+    </section>
     <!-- Search popup END -->
 
     <!-- Login popup START -->
-    <!--
-      <section class="modal modal-login">
-    
-      </section>
--->
+    <section class="modal modal-login">
+      <form class="login-form" action="/echo" method="post">
+        <ul>
+          <li>
+            <label class="visually-hidden" for="email-field"></label>
+            <input class="user-email" id="email-field" type="email" name="email" placeholder="Электронная почта">
+          </li>
+          <li>
+            <label class="visually-hidden" for="password-field"></label>
+            <input class="password-user" id="password-field" type="password" name="password" placeholder="Пароль">
+          </li>
+        </ul>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+      <div class="modal-login-links">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </div>
+    </section>
     <!-- Login popup END -->
 
     <!-- Contact-form popup START -->
-    <!--
-      <section class="modal modal-contact">
-    
-      </section>
--->
+    <section class="modal modal-feedback">
+      <h3 class="highlight">Мы обязательно вам ответим!</h3>
+      <button class="modal-close" type="button">Закрыть</button>
+      <form class="feedback-form" action="/echo" method="post">
+        <ul>
+          <li>
+            <label class="visually-hidden" for="name-field"></label>
+            <input class="user-name" id="name-field" type="text" name="name" placeholder="Как вас зовут?">
+          </li>
+          <li>
+            <label class="visually-hidden" for="email-field-feedback"></label>
+            <input class="user-email-feedback" id="email-field-feedback" type="email" name="email" placeholder="Ваша почта для ответа?">
+          </li>
+          <li>
+            <label class="visually-hidden" for="message-field"></label>
+            <textarea name="user-message" id="message-field" cols="30" rows="10" placeholder="Напишите что нибудь..."></textarea>
+          </li>
+        </ul>
+        <button class="button" type="submit">
+          Отправить
+        </button>
+      </form>
+    </section>
     <!-- Contact-form popup END -->
 
 
   </div>
 
 </body>
+
 </html>

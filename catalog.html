@@ -250,19 +250,64 @@
 
     <!-- Search popup START -->
     <section class="modal modal-serch">
-
+      <form class="serch-form" action="/echo" method="post">
+        <label class="visually-hidden" for="search-field"></label>
+        <input class="site-search" id="search-field" type="search" name="search" placeholder="Что ищем?">
+      </form>
     </section>
     <!-- Search popup END -->
 
     <!-- Login popup START -->
     <section class="modal modal-login">
-
+      <form class="login-form" action="/echo" method="post">
+        <ul>
+          <li>
+            <label class="visually-hidden" for="email-field"></label>
+            <input class="user-email" id="email-field" type="email" name="email" placeholder="Электронная почта">
+          </li>
+          <li>
+            <label class="visually-hidden" for="password-field"></label>
+            <input class="password-user" id="password-field" type="password" name="password" placeholder="Пароль">
+          </li>
+        </ul>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+      <div class="modal-login-links">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </div>
     </section>
     <!-- Login popup END -->
     
     <!-- Basket popup START -->
     <section class="modal modal-basket">
-
+      <table>
+        <tr class="basket-preview">
+          <td class="delete"><button class="modal-close delete-item" type="button">Удалить</button>
+          </td>
+          <td><img src="img/basket-preview1.png" alt="Пломбир с апельсиновым джемом"></td>
+          <td>
+          <a href="#">Пломбир с апельсиновым джемом</a>
+          </td>
+          <td>1,5 кг x <span>200</span></td>
+          <td>300 руб.</td>
+        </tr>
+        <tr class="basket-preview">
+          <td class="delete">
+          <button class="modal-close delete-item" type="button">Удалить</button>
+         </td>
+          <td><img src="img/basket-preview2.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+          <td>
+          <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+          </td>
+          <td>1,5 кг x <span>300</span></td>
+          <td>450 руб.</td>
+        </tr>
+      </table>
+      <p class="sum-total highlight">Итого: 750 руб.</p>
+      <button class="button" type="submit">Оформить заказ</button>
     </section>
     <!-- Basket popup END -->
     
