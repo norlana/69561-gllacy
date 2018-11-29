@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Интернет магазин мороженого - Глэйси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/gllacy-style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
         <!-- ===================== User-menu START ================ -->
         <ul class="user-menu">
           <li class="user-menu-item">
-            <button class="top-modal-btn search-button" type="submit">Найти</button>
+            <a class="button-user search-button" href="#">Найти</a>
             <!-- ======================= Search popup START ================ -->
             <div class="modal modal-serch">
               <form class="serch-form" action="/echo" method="post">
@@ -52,7 +53,7 @@
             <!-- ======================== Search popup END ================= -->
           </li>
           <li class="user-menu-item">
-            <a class="top-modal-btn login-button" href="#">Вход</a>
+            <a class="button-user login-button" href="#">Вход</a>
             <!-- ======================== Login popup START ================ -->
             <div class="modal modal-login">
               <form class="login-form" action="/login" method="post">
@@ -78,7 +79,7 @@
             <!-- ===================== Login popup END ==================== -->
           </li>
           <li class="user-menu-item">
-            <a class="show-modal-btn basket-button" href="#">Пусто</a>
+            <a class="button-user basket-button" href="#">Пусто</a>
           </li>
         </ul>
         <!-- ==================== User-menu END ================= -->
@@ -239,7 +240,7 @@
     </main>
 
     <!-- ========================= Map-block START ================== -->
-    <section class="map-block container">
+    <section class="map-block container-map">
       <h2 class="visually-hidden">Адрес нашего офлайн-магазина</h2>
       <div class="address">
         <p class="small">Адрес главного офиса и<br> офлайн магазина:
@@ -315,3 +316,5 @@
 </body>
 
 </html>
+
+

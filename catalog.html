@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Онлайн-магазин "Глэйси" | Каталог | Сливочное мороженое</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,9 +35,7 @@
       <!-- ======================= User-menu START ======================== -->
       <ul class="user-menu">
         <li class="user-menu-item">
-          <button class="top-modal-btn search-button" type="submit">
-            Найти
-          </button>
+          <a class="button-user search-button" href="#">Найти</a>
           <!-- ======================= Search popup START ================ -->
           <div class="modal modal-serch">
             <form class="serch-form" action="/echo" method="post">
@@ -47,7 +46,7 @@
           <!-- ======================== Search popup END ================= -->
         </li>
         <li class="user-menu-item">
-          <a class="top-modal-btn login-button" href="#">Вход</a>
+          <a class="button-user login-button" href="#">Вход</a>
           <!-- ======================== Login popup START ================ -->
           <div class="modal modal-login">
             <form class="login-form" action="/login" method="post">
@@ -73,7 +72,7 @@
           <!-- ========================= Login popup END ===================== -->
         </li>
         <li class="user-menu-item">
-          <a class="basket-link" href="#">Пусто</a>
+          <a class="button-user basket-button" href="#">Пусто</a>
           <!-- ================== Basket popup START ===================== -->
           <section class="modal modal-basket">
             <table>
@@ -129,10 +128,48 @@
     <h1 class="page-title">Сливочное мороженое</h1>
 
     <!-- ================== Filters START =========================== -->
-    <section class="filters">
+    <aside class="filters-form">
       <h2 class="visually-hidden">Фильтр продукции</h2>
-      <form action=""></form>
-    </section>
+      <form class="filters-form" action="/filters" method="get">
+        <fieldset class="filter-type sorting">
+          <legend>Сортировка</legend>
+          <select class="sorting-list" id="sorting-list" name="sorting-list">
+            <option value="">по популярности</option>
+            <option value="">сначала недорогие</option>
+            <option value="">сначала дорогие</option>
+            <option value="">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset class="filter-type price">
+          <legend>Цена: 100 руб. - 500 руб.</legend>
+          <input class="price-from" id="price-from" name="price-from" type="range" min="100" max="500" step="10" value="150">
+          <label for="price-from">Цена от</label>
+          <input class="price-to" id="price-to" name="price-to" type="range" min="100" max="500" step="10" value="500">
+          <label for="price-to">Цена до</label>
+        </fieldset>
+        <fieldset class="filter-type fat">
+          <legend>Жирность</legend>
+          <input id="zero" type="radio" name="fat-percent" value="0">
+          <input id="less-ten" type="radio" name="fat-percent" value="< 10" checked>
+          <input id="less-thirty" type="radio" name="fat-percent" value="< 30">
+          <input id="more-thirty" type="radio" name="fat-percent" value="> 30">
+        </fieldset>
+        <fieldset class="filter-type filling">
+          <legend>Наполнители</legend>
+          <input id="choсo" type="checkbox" checked>
+          <label for="choco">шоколадные</label>
+          <input id="sugar" type="checkbox" checked>
+          <label for="sugar">сахарные присыпки</label>
+          <input id="fruits" type="checkbox">
+          <label for="fruits">фрукты</label>
+          <input id="syrups" type="checkbox">
+          <label for="syrups">сиропы</label>
+          <input id="jam" type="checkbox">
+          <label for="jam">джемы</label>
+        </fieldset>
+        <button class="button-user filters-button" type="submit">Применить</button>
+      </form>
+    </aside>
     <!-- =================== Filters END ============================ -->
 
     <!-- ================== Catalog START =========================== -->
