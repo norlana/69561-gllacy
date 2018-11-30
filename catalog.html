@@ -108,7 +108,7 @@
     </nav>
 
     <!-- =================== Contact-block-top START ===================== -->
-    <p class="contact-block-top highlight">
+    <p class="contact-top highlight">
       <span class="mode disp-block">с 10 до 20, ежеденевно</span>
       <span class="phone">8 812 450-25-25</span>
     </p>
@@ -133,39 +133,51 @@
       <form class="filters-form" action="/filters" method="get">
         <fieldset class="filter-type sorting">
           <legend>Сортировка</legend>
-          <select class="sorting-list" id="sorting-list" name="sorting-list">
-            <option value="">по популярности</option>
-            <option value="">сначала недорогие</option>
-            <option value="">сначала дорогие</option>
-            <option value="">по жирности</option>
-          </select>
+          <div class="filter-wrap">
+            <select class="sorting-list" id="sorting-list" name="sorting-list">
+              <option value="by-popularity">по популярности</option>
+              <option value="first-cheap">сначала недорогие</option>
+              <option value="first-expensive">сначала дорогие</option>
+              <option value="by-fat">по жирности</option>
+            </select>
+          </div>
         </fieldset>
-        <fieldset class="filter-type price">
-          <legend>Цена: 100 руб. - 500 руб.</legend>
-          <input class="price-from" id="price-from" name="price-from" type="range" min="100" max="500" step="10" value="150">
-          <label for="price-from">Цена от</label>
-          <input class="price-to" id="price-to" name="price-to" type="range" min="100" max="500" step="10" value="500">
-          <label for="price-to">Цена до</label>
-        </fieldset>
+        <div class="filter-type price">
+          <span class="price-title">Цена: 100 руб. - 500 руб.</span>
+          <div class="filter-wrap">
+            <span class="range range-1"></span>
+            <span class="range range-2"></span>
+            <span class="range-slider price-from"></span>
+            <span class="range-slider price-to"></span>
+          </div>
+        </div>
         <fieldset class="filter-type fat">
           <legend>Жирность</legend>
-          <input id="zero" type="radio" name="fat-percent" value="0">
-          <input id="less-ten" type="radio" name="fat-percent" value="< 10" checked>
-          <input id="less-thirty" type="radio" name="fat-percent" value="< 30">
-          <input id="more-thirty" type="radio" name="fat-percent" value="> 30">
+          <div class="filter-wrap">
+            <input id="zero" type="radio" name="fat-percent" value="0">
+            <label for="zero">0%</label>
+            <input id="less-ten" type="radio" name="fat-percent" value="< 10" checked>
+            <label for="less-ten">до 10%</label>
+            <input id="less-thirty" type="radio" name="fat-percent" value="< 30">
+            <label for="less-thirty">до 30%</label>
+            <input id="more-thirty" type="radio" name="fat-percent" value="> 30">
+            <label for="more-thirty">выше 30%</label>
+          </div>
         </fieldset>
         <fieldset class="filter-type filling">
           <legend>Наполнители</legend>
-          <input id="choсo" type="checkbox" checked>
-          <label for="choco">шоколадные</label>
-          <input id="sugar" type="checkbox" checked>
-          <label for="sugar">сахарные присыпки</label>
-          <input id="fruits" type="checkbox">
-          <label for="fruits">фрукты</label>
-          <input id="syrups" type="checkbox">
-          <label for="syrups">сиропы</label>
-          <input id="jam" type="checkbox">
-          <label for="jam">джемы</label>
+          <div class="filter-wrap">
+            <input id="choсo" type="checkbox" checked>
+            <label for="choco">шоколадные</label>
+            <input id="sugar" type="checkbox" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input id="fruits" type="checkbox">
+            <label for="fruits">фрукты</label>
+            <input id="syrups" type="checkbox">
+            <label for="syrups">сиропы</label>
+            <input id="jam" type="checkbox">
+            <label for="jam">джемы</label>
+          </div>
         </fieldset>
         <button class="button-user filters-button" type="submit">Применить</button>
       </form>
@@ -292,7 +304,7 @@
     <div class="pagination-block">
       <ul class="pagination">
         <li class="pagination-item prev">
-          <a class="" href="#">&lt;</a>
+          <a class="" href="#">Предыдущая</a>
         </li>
         <li class="pagination-item active">
           <a class="" href="#">1</a>
@@ -309,8 +321,8 @@
         <li class="pagination-item">
           <a href="#">5</a>
         </li>
-        <li class="pagination-item">
-          <a href="#">&gt;</a>
+        <li class="pagination-item next">
+          <a href="#">Следующая</a>
         </li>
       </ul>
     </div>
