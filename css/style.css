@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  
-  font-family: Roboto, Arial, sans-serif;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
   color: #323232;
-  
+
   background-color: #849d8f;
 }
 
@@ -14,30 +14,83 @@ a {
   text-decoration: none;
 }
 
+.page-home input,
+.page-catalog input {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.page-home input:hover,
+.page-catalog input:hover {
+  border: 2px solid #999999;
+}
+
+.page-home input:focus,
+.page-catalog input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+::-webkit-input-placeholder {
+  font: inherit;
+  font-weight: 400;
+  color: #999999;
+}
+
+:-moz-placeholder {
+  font: inherit;
+  font-weight: 400;
+  color: #999999;
+}
+
+:-ms-input-placeholder {
+  font: inherit;
+  font-weight: 400;
+  color: #999999;
+}
+
+::placeholder {
+  font: inherit;
+  font-weight: 400;
+  color: #999999;
+}
+
 .visually-hidden {
-	position: absolute;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+
   width: 1px;
   height: 1px;
+  overflow: hidden;
+
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*---------------------- Buttons --------------------------*/
 
 .button {
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
-  text-align: center;
   vertical-align: middle;
-  color: #fff;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
+  text-align: center;
+  color: #ffffff;
+
+  background-image:    -moz-linear-gradient(to top, #e74a35, #f26843);
+  background-image: -webkit-linear-gradient(to top, #e74a35, #f26843);
+  background-image:     -ms-linear-gradient(to top, #e74a35, #f26843);
+  background-image:         linear-gradient(to top, #e74a35, #f26843);
   border: none;
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
 .button:hover {
-	background-image: linear-gradient(to top,#ec6f5e, #f58669);
+  background-image:    -moz-linear-gradient(to top, #ec6f5e, #f58669);
+  background-image: -webkit-linear-gradient(to top, #ec6f5e, #f58669);
+  background-image:     -ms-linear-gradient(to top, #ec6f5e, #f58669);
+  background-image:         linear-gradient(to top, #ec6f5e, #f58669);
 }
 
 .button:focus {
@@ -45,61 +98,70 @@ a {
 }
 
 .button:active {
-  background-image: linear-gradient(to bottom, #e74a35, #f26843);
-  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image:    -moz-linear-gradient(to bottom, #e74a35, #f26843);
+  background-image: -webkit-linear-gradient(to bottom, #e74a35, #f26843);
+  background-image:     -ms-linear-gradient(to bottom, #e74a35, #f26843);
+  background-image:         linear-gradient(to bottom, #e74a35, #f26843);
+  box-shadow: inset 0 2px 2px 0 #942718;
 }
 
 .button-link {
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-	font-weight: 500;
+  color: #ffffff;
+
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
   border: none;
 }
 
 .button-link:hover:not(.empty),
 .button-link:focus:not(.empty) {
-	background: #f7f6f3;
   color: #323232;
+
+  background: #f7f6f3;
 }
 
 .button-link.empty:focus {
-	color: #323232;
-}
-
-.button-link.filled {
-	background: #f7f6f3;
   color: #323232;
 }
 
+.button-link.filled {
+  color: #323232;
+
+  background: #f7f6f3;
+}
+
 .button-link.filled:focus {
-	color: #e84d37;
+  color: #e84d37;
 }
 
 .filters-button {
-	font: inherit;
+  font: inherit;
+  color: #ffffff;
+
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
 }
 
 .filters-button:hover,
 .filters-button:focus {
-	background: #fbfcfb;
   color: #323232;
+
+  background: #fbfcfb;
 }
 
 .filters-button:active {
-	background: #ededed;
   color: #323232;
+
+  background: #ededed;
 }
 
 .page-home *:focus,
 .page-home *:active,
 .page-catalog *:focus,
 .page-catalog *:active {
-	outline: 0;
+  outline: 0;
 }
 
 /*------------------------------------------------------*/
@@ -110,33 +172,38 @@ a {
 
 .page-color-wrapper {
   background-color: #849d8f;
-  background-image: radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
-  );
+  background-image:    -moz-radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
+  background-image: -webkit-radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
+  background-image:     -ms-radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
+  background-image:         radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
 }
 
 .main-menu a {
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
-	color: #fff;
+  color: #ffffff;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-menu a:hover,
 .main-menu a:focus {
-	color: #323232;
+  color: #323232;
+
   background-color: #f7f6f3;
 }
 
 .main-menu a:active {
   color: #323232;
+
   background-color: #ededed;
-  box-shadow: inset 0px 2px 1px 0 #696969;
+  box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .main-menu,
 .user-menu {
-	list-style: none;
+  list-style: none;
 }
 
 .submenu,
@@ -145,10 +212,10 @@ a {
 }
 
 .contact-top {
-	font-size: 14px;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 16px;
-	font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 }
 
 .contact-top .phone {
@@ -158,7 +225,35 @@ a {
 
 /* здесь будет стилизация слайдера .hero */
 
+.slides-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60.35px;
+  color: #ffffff;
+}
+
+.slides .button {
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+}
+
 /* здесь будет стилизация баннеров .banners */
+
+.banners {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.banners h2 {
+  font-weight: inherit;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banners-img {
+  border-radius: 17px;
+}
 
 /* здесь будет стилизация превью каталога .catalog.hits*/
 
@@ -167,45 +262,47 @@ a {
 }
 
 .features-list {
-	list-style: none;
+  list-style: none;
 }
 
 .features .intro {
-	font-size: 24px;
-  line-height: 30px;
   font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
   text-align: left;
 }
 
 .blog-news {
-	background-color: #fff;
+  background-color: #ffffff;
   background-image: url(/img/blog-news-bg.jpg);
   background-repeat: no-repeat;
 }
 
 .blog-news h2 {
-	font: inherit;
+  font: inherit;
   font-weight: 500;
 }
 
 .blog-news a:hover,
 .blog-news a:focus,
 .blog-news a:active {
-	color: #e84d37;
+  color: #e84d37;
 }
 
 .news-title {
-	text-decoration: underline;
-  color: #323232;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
+  color: #323232;
+  text-decoration: underline;
 }
 
 .subscribe-block {
+  text-align: left;
+  color: #5a5a5a;
+
   background-image: url(/img/subscribe-border.svg);
   background-repeat: no-repeat;
-  text-align: left;
 }
 
 .subscribe-wrapper {
@@ -214,123 +311,171 @@ a {
 
 /* здесь будет стилизация блока с картой .map-block */
 
+.address {
+  font-size: 14px;
+  line-height: 20px;
+
+  background-color: #ffffff;
+}
+
+.major {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /*------------------ Page-Catalog--------------------*/
 
-.page-catalog .catalog-nav{
-	color: #fff;
+.page-catalog .catalog-nav {
+  color: #ffffff;
+
   background-color: #d07058;
 }
 
 .breadcrumbs {
-	color: #fff;
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
-  list-style: none;
+  color: #ffffff;
 }
 
 .breadcrumbs a {
-  color: #fff;
+  color: #ffffff;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .page-title {
-	font-size: 35px;
-  line-height: 41px;
-  color: #fff;
   font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.filter-type {
+  border: none;
+}
+
+.filter-type legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   text-align: left;
 }
 
+.filter-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .catalog-list {
-	color: #fff;
   list-style: none;
+  color: #ffffff;
 }
 
 .catalog-list .title-link {
-	color: #fff;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .catalog-list .title-link:hover,
 .catalog-list .title-link:focus,
 .catalog-list .title-link:active {
   color: #ffbc9e;
+
   border-bottom-color: #ffbc9e;
 }
 
 
 .item-price {
-	font-size: 45px;
-  line-height: 45px;
   font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
 }
 
 .item-price span {
+  font-weight: 700;
   font-size: 30px;
   line-height: 45px;
-  font-weight: 700;
 }
 
+.pagination-list {
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-list a {
+  color: #ffffff;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-list a:active {
+  color: #323232;
+
+  background: #ffffff;
+}
+
+.pagination-item .disabled {
+  color: rgba(255, 255, 255, 0.2);
+
+  pointer-events: none;
+}
+
+.pagination-item .current {
+  color: #323232;
+
+  background: #ffffff;
+
+  pointer-events: none;
+}
+
+/*------------------------------------------------------------*/
 
 .footer {
   font-size: 12px;
-	color: #fff;
+  color: #ffffff;
 }
 
 .footer-social,
 .footer-menu {
-	list-style: none;
+  list-style: none;
 }
 
 .footer a {
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer a:not(.social-button) {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer a:hover:not(.social-button),
-.footer a:focus:not(.social-button)
+.footer a:focus:not(.social-button),
 .footer a:active:not(.social-button) {
   color: #ffbc9e;
+
   border-bottom-color: #ffbc9e;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
