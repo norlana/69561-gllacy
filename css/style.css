@@ -258,7 +258,7 @@ a {
 /* здесь будет стилизация превью каталога .catalog.hits*/
 
 .features {
-  background-image: url(/img/pattern-wafer.jpg);
+  background-image: url("../img/pattern-waffer.jpg");
 }
 
 .features-list {
@@ -274,7 +274,7 @@ a {
 
 .blog-news {
   background-color: #ffffff;
-  background-image: url(/img/blog-news-bg.jpg);
+  background-image: url("../img/blog-news-bg.jpg");
   background-repeat: no-repeat;
 }
 
@@ -301,7 +301,7 @@ a {
   text-align: left;
   color: #5a5a5a;
 
-  background-image: url(/img/subscribe-border.svg);
+  background-image: url("../img/subscribe-border.svg");
   background-repeat: no-repeat;
 }
 
