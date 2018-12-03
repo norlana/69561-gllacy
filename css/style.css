@@ -203,6 +203,8 @@ a {
 
 .main-menu,
 .user-menu {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -233,6 +235,9 @@ a {
 }
 
 .slides .button {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
@@ -365,7 +370,8 @@ a {
   border: none;
 }
 
-.filter-type legend {
+.filter-type legend,
+.filter-type .legend {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
