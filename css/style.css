@@ -14,6 +14,16 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.disp-block {
+  display: block;
+}
+
 .page-home input,
 .page-catalog input {
   font-weight: 700;
@@ -164,6 +174,7 @@ a {
   outline: 0;
 }
 
+
 /*------------------------------------------------------*/
 
 .page-home > input[type=radio] {
@@ -176,6 +187,33 @@ a {
   background-image: -webkit-radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
   background-image:     -ms-radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
   background-image:         radial-gradient(520px at 50% 5%, rgba(207, 246, 225, 1) 0%, rgba(207, 246, 225, 0.45) 40%, rgba(207, 246, 225, 0) 100%);
+}
+
+/*------------------------- header ------------------*/
+.header-nav {
+  display: flex;
+  align-items: flex-start;
+  width: 1146px;
+}
+
+.header-logo {
+  width: 154px;
+  height: 64px;
+  padding: 8px 24px 0 0;
+}
+
+.main-menu,
+.user-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-nav .main-menu {
+  min-width: 425px;
+
+  text-align: left;
 }
 
 .main-menu a {
@@ -201,11 +239,11 @@ a {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
-.main-menu,
-.user-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.header-nav .user-menu {
+  min-width: 265px;
+  margin-left: auto;
+
+  text-align: right;
 }
 
 .submenu,
@@ -217,6 +255,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: right;
   color: #ffffff;
 }
 
@@ -225,7 +264,7 @@ a {
   line-height: 24px;
 }
 
-/* здесь будет стилизация слайдера .hero */
+/* ---------------------- hero slider -------------------------- */
 
 .slides-title {
   font-weight: 700;
@@ -235,13 +274,13 @@ a {
 }
 
 .slides .button {
-  font-size: 32px;
   font-weight: 700;
+  font-size: 32px;
   line-height: 44px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
-/* здесь будет стилизация баннеров .banners */
+/* ----------------------- .banners ----------------------------- */
 
 .banners {
   font-weight: 700;
@@ -260,30 +299,80 @@ a {
   border-radius: 17px;
 }
 
-/* здесь будет стилизация превью каталога .catalog.hits*/
+/* ----------------------- .catalog.hits -------------------------*/
 
+
+/* ----------------------- .features -------------------------*/
 .features {
-  background-image: url("../img/pattern-waffer.jpg");
-}
+  margin-bottom: 40px;
+  padding: 25px 20px 4px 20px;
 
-.features-list {
-  list-style: none;
+  font: inherit;
+  text-align: left;
+
+  background-image: url("../img/pattern-waffer.jpg");
+  border-radius: 15px;
 }
 
 .features .intro {
+  margin-bottom: 20px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-item {
+  box-sizing: border-box;
+  width: 540px;
+  margin-bottom: 22px;
+  padding-left: 56px;
+}
+
+.features p {
+  margin: 0;
+}
+
+/* ----------------------- .news-block -------------------------*/
+.news {
+  display: flex;
+
+/*  align-items: flex-start;*/
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .blog-news {
+  width: 520px;
+  padding: 22px 20px 0 20px;
+
+  text-align: left;
+
   background-color: #ffffff;
   background-image: url("../img/blog-news-bg.jpg");
   background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.news p,
+.news h2 {
+  margin: 0;
 }
 
 .blog-news h2 {
+  margin-bottom: 5px;
+
   font: inherit;
   font-weight: 500;
 }
@@ -295,6 +384,10 @@ a {
 }
 
 .news-title {
+  display: block;
+  width: 279px;
+  margin-bottom: 80px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -302,21 +395,41 @@ a {
   text-decoration: underline;
 }
 
-.subscribe-block {
+.subscribe {
+  width: 549px;
+  padding: 4px 5px 5px 6px;
+
   text-align: left;
   color: #5a5a5a;
 
   background-image: url("../img/subscribe-border.svg");
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
+
 
 .subscribe-wrapper {
+  padding: 30px 19px 0 21px;
+
   background-color: #f8f7f4;
+  border-radius: 15px;
 }
 
-/* здесь будет стилизация блока с картой .map-block */
+.subscribe .subscribe-info {
+  margin-bottom: 36px;
+}
+
+/* ------------------------ .map-block --------------------------*/
+.container-map {
+  position: relative;
+
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .address {
+  position: absolute;
+
   font-size: 14px;
   line-height: 20px;
 
@@ -329,7 +442,7 @@ a {
   line-height: 24px;
 }
 
-/*------------------ Page-Catalog--------------------*/
+/*========================= .page-catalog =======================*/
 
 .page-catalog .catalog-nav {
   color: #ffffff;
@@ -383,8 +496,27 @@ a {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  text-align: center;
   color: #ffffff;
+}
+
+.catalog-list h3,
+.catalog-list p {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 267px;
 }
 
 .catalog-list .title-link {
@@ -405,6 +537,14 @@ a {
   border-bottom-color: #ffbc9e;
 }
 
+.catalog-img {
+  border-radius: 50%;
+}
+
+.catalog-item h3 {
+  order: 1;
+  width: 258px;
+}
 
 .item-price {
   font-weight: 700;
@@ -455,9 +595,13 @@ a {
   pointer-events: none;
 }
 
-/*------------------------------------------------------------*/
+/*------------------------ .footer ---------------------------*/
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: 12px;
   color: #ffffff;
 }
@@ -472,10 +616,13 @@ a {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer a:not(.social-button) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.footer .social-button,
+.footer .copyright-logo {
+  border-bottom: none;
 }
 
 .footer a:hover:not(.social-button),
