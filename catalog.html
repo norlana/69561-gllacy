@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Онлайн-магазин "Глэйси" | Каталог | Сливочное мороженое</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -112,10 +112,12 @@
     </nav>
 
     <!-- =================== Contact-block-top START ===================== -->
-    <p class="contact-top highlight">
-      <span class="mode disp-block">с 10 до 20, ежеденевно</span>
-      <span class="phone">8 812 450-25-25</span>
-    </p>
+    <div class="contact-wrapper">
+      <p class="contact-top highlight">
+        <span class="mode disp-block">с 10 до 20, ежеденевно</span>
+        <span class="phone">8 812 450-25-25</span>
+      </p>
+    </div>
     <!-- ================== Contact-block END ========================== -->
   </header>
 
@@ -310,7 +312,7 @@
     <div class="pagination">
       <ul class="pagination-list">
         <li class="pagination-item prev">
-          <a class="disabled" href="#">Предыдущая</a>
+          <a class="disabled" href="#"><span></span></a>
         </li>
         <li class="pagination-item">
           <a class="current" href="#">1</a>
@@ -328,7 +330,7 @@
           <a  href="#">5</a>
         </li>
         <li class="pagination-item next">
-          <a href="#">Следующая</a>
+          <a class="enabled" href="#"><span></span></a>
         </li>
       </ul>
     </div>
@@ -345,7 +347,7 @@
       <li class="social-item"><a class="social-button" href="#">Вконтакте</a></li>
     </ul>
     <!-- ================= Social links END =================== -->
-    
+
     <!-- ================== Footer menu START ================= -->
     <nav class="footer-nav">
       <ul class="footer-menu">

@@ -10,10 +10,9 @@
 </head>
 
 <body class="page-home">
-  <input type="radio" name="point" id="btn1" checked>
-  <input type="radio" name="point" id="btn2">
-  <input type="radio" name="point" id="btn3">
-  <!--  радио кнопки вынесены наверх для взаимодействия с оберткой page-color-wrapper, изменяющей цвет фона всей страницы-->
+  <input class="visually-hidden" type="radio" name="point" id="btn-1" checked>
+  <input class="visually-hidden" type="radio" name="point" id="btn-2">
+  <input class="visually-hidden" type="radio" name="point" id="btn-3">
 
   <div class="page-color-wrapper">
     <header class="header container">
@@ -23,109 +22,107 @@
         <a class="header-logo">
           <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина мороженого «Глэйси»">
         </a>
-          <!-- =================== Main-menu START ================ -->
-          <ul class="main-menu">
-            <li class="main-menu-item">
-              <a class="catalog-nav" href="/catalog">Каталог</a>
-              <ul class="submenu">
-                <li class="submenu-item highlight"><a href="#">Новинки</a></li>
-                <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
-                <li class="submenu-item"><a href="#">Щербеты</a></li>
-                <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
-                <li class="submenu-item"><a href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="main-menu-item">
-              <a class="payment-nav" href="/payment">Доставка и оплата</a>
-            </li>
-            <li class="main-menu-item">
-              <a class="company-nav" href="/about-company">О Компании</a></li>
-          </ul>
-          <!-- ==================== Main-menu END ================= -->
+        <!-- =================== Main-menu START ================ -->
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a class="catalog-nav" href="/catalog">Каталог</a>
+            <ul class="submenu">
+              <li class="submenu-item highlight"><a href="#">Новинки</a></li>
+              <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
+              <li class="submenu-item"><a href="#">Щербеты</a></li>
+              <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
+              <li class="submenu-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a class="payment-nav" href="/payment">Доставка и оплата</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="company-nav" href="/about-company">О Компании</a></li>
+        </ul>
+        <!-- ==================== Main-menu END ================= -->
 
-          <!-- ==================== User-menu START =============== -->
-          <ul class="user-menu">
-            <li class="user-menu-item">
-              <a class="button-link search-button" href="#">Найти</a>
-              <!-- ======================= Search popup START ================ -->
-              <div class="modal modal-serch">
-                <form class="serch-form" action="/echo" method="post">
-                  <label class="visually-hidden" for="search-field"></label>
-                  <input class="site-search" id="search-field" type="search" name="search" placeholder="Что ищем?">
-                </form>
-              </div>
-              <!-- ======================== Search popup END ================= -->
-            </li>
-            <li class="user-menu-item">
-              <a class="button-link login-button" href="#">Вход</a>
-              <!-- ======================== Login popup START ================ -->
-              <div class="modal modal-login">
-                <form class="login-form" action="/login" method="post">
-                  <ul>
-                    <li>
-                      <label class="visually-hidden" for="email-field"></label>
-                      <input class="user-email" id="email-field" type="email" name="email" placeholder="Электронная почта">
-                    </li>
-                    <li>
-                      <label class="visually-hidden" for="password-field"></label>
-                      <input class="password-user" id="password-field" type="password" name="password" placeholder="Пароль">
-                    </li>
-                  </ul>
-                  <button class="button" type="submit">
-                    Войти
-                  </button>
-                  <div class="modal-login-links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
-                </form>
-              </div>
-              <!-- ===================== Login popup END ==================== -->
-            </li>
-            <li class="user-menu-item">
-              <a class="button-link basket-button empty" href="#">Пусто</a>
-            </li>
-          </ul>
-          <!-- ==================== User-menu END ================= -->
+        <!-- ==================== User-menu START =============== -->
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a class="button-link search-button" href="#">Найти</a>
+            <!-- ======================= Search popup START ================ -->
+            <div class="modal modal-serch">
+              <form class="serch-form" action="/echo" method="post">
+                <label class="visually-hidden" for="search-field"></label>
+                <input class="site-search" id="search-field" type="search" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
+            <!-- ======================== Search popup END ================= -->
+          </li>
+          <li class="user-menu-item">
+            <a class="button-link login-button" href="#">Вход</a>
+            <!-- ======================== Login popup START ================ -->
+            <div class="modal modal-login">
+              <form class="login-form" action="/login" method="post">
+                <ul>
+                  <li>
+                    <label class="visually-hidden" for="email-field"></label>
+                    <input class="user-email" id="email-field" type="email" name="email" placeholder="Электронная почта">
+                  </li>
+                  <li>
+                    <label class="visually-hidden" for="password-field"></label>
+                    <input class="password-user" id="password-field" type="password" name="password" placeholder="Пароль">
+                  </li>
+                </ul>
+                <button class="button" type="submit">
+                  Войти
+                </button>
+                <div class="modal-login-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+            <!-- ===================== Login popup END ==================== -->
+          </li>
+          <li class="user-menu-item">
+            <a class="button-link basket-button empty" href="#">Пусто</a>
+          </li>
+        </ul>
+        <!-- ==================== User-menu END ================= -->
       </nav>
       <!-- ===================== Header-nav END ================== -->
 
       <!-- ====================== Contact-top START ====== -->
-      <p class="contact-top highlight">
-        <span class="mode disp-block">с 10 до 20, ежеденевно</span>
-        <span class="phone">8 812 450-25-25</span>
-      </p>
+        <div class="contact-wrapper">
+          <p class="contact-top highlight">
+            <span class="mode disp-block">с 10 до 20, ежеденевно</span>
+            <span class="phone">8 812 450-25-25</span>
+          </p>
+        </div>
       <!-- ===================== Contact-block END ============= -->
     </header>
 
-    <main class="container">
+    <main class="main container">
       <!-- ====================  Slider START  ================== -->
       <section class="hero">
-        <div class="slider-wrapper">
-          <div class="slider">
-            <div class="slides slide1">
-              <p class="slides-title title1">Крем-брюле и пломбир с малиновым джемом</p>
-              <button class="button" type="button">Давайте оба!</button>
-              <img class="slides-img img1" src="img/slide-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
-            </div>
-            <div class="slides slide2">
-              <p class="slides-title title2">Шоколадный пломбир и лимонный сорбет</p>
-              <button class="button" type="button">Давайте оба!</button>
-              <img class="slides-img img2" src="img/slide-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582">
-            </div>
-            <div class="slides slide3">
-              <p class="slides-title title3">Пломбир с помадкой и клубничный щербет</p>
-              <button class="button" type="button">Давайте оба!</button>
-              <img class="slides-img img3" src="img/slide-3.png" alt="Пломбир с помадкой и клубничный щербет" width="639" height="582">
-            </div>
+        <div class="controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slider">
+          <div class="slider-item slide" id="slide-1">
+            <h3 class="slider-title title-1">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a class="button slide-button btn-one" href="#">Давайте оба!</a>
+            <img class="slider-img img-1" src="img/slide-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="644" height="582">
           </div>
-
-          <div class="controls">
-            <label for="btn1"></label>
-            <label for="btn2"></label>
-            <label for="btn3"></label>
+          <div class="slider-item slide" id="slide-2">
+            <h3 class="slider-title title-2">Шоколадный пломбир и лимонный сорбет</h3>
+            <a class="button slide-button btn-two" href="#">Давайте оба!</a>
+            <img class="slider-img img-2" src="img/slide-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582">
           </div>
-
+          <div class="slider-item slide" id="slide-3">
+            <h3 class="slider-title title-3">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="button slide-button btn-three" href="#">Давайте оба!</a>
+            <img class="slider-img img-3" src="img/slide-3.png" alt="Пломбир с помадкой и клубничный щербет" width="644" height="582">
+          </div>
         </div>
       </section>
       <!-- ======================  Slider END ===================== -->
