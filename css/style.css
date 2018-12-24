@@ -31,15 +31,6 @@ img {
   display: block;
 }
 
-.modal {
-  position: absolute;
-
-  display: none;
-
-  background-color: #f8f7f4;
-  border-radius: 5px;
-}
-
 .page-home input,
 .page-catalog input,
 .page-home textarea {
@@ -124,15 +115,6 @@ input[type="radio"].visually-hidden {
   background-image:         linear-gradient(to bottom, #e74a35, #f26843);
   box-shadow: inset 0 2px 2px 0 #942718;
 }
-
-/*
-.page-home :focus,
-.page-home :active,
-.page-catalog :focus,
-.page-catalog :active {
-  outline: gray;
-}
-*/
 
 /*------------------- page-color-wrapper ------------------*/
 
@@ -319,13 +301,12 @@ input[type="radio"].visually-hidden {
 }
 
 .inline-svg-icon {
-  display: inline-block;
-  width: 21px;
-  height: 21px;
-
-  vertical-align: top;
-
   fill: #ffffff;
+}
+
+.search-icon {
+  width: 17px;
+  height: 17px;
 }
 
 .login {
@@ -340,6 +321,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   left: 17px;
+
+  width: 21px;
+  height: 19px;
 }
 
 .basket {
@@ -354,6 +338,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   left: 16px;
+
+  width: 21px;
+  height: 20px;
 }
 
 .empty {
@@ -466,9 +453,75 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   left: 16px;
+
+  width: 21px;
+  height: 20px;
 }
 
 /* ------------------ modal ------------- */
+
+@keyframes stretchVertical {
+  from {
+    -webkit-transform: translate(-50%, -75%) rotateX(-70deg);
+       -moz-transform: translate(-50%, -75%) rotateX(-70deg);
+        -ms-transform: translate(-50%, -75%) rotateX(-70deg);
+         -o-transform: translate(-50%, -75%) rotateX(-70deg);
+            transform: translate(-50%, -75%) rotateX(-70deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(-50%, -75%) rotateX(0deg);
+       -moz-transform: translate(-50%, -75%) rotateX(0deg);
+        -ms-transform: translate(-50%, -75%) rotateX(0deg);
+         -o-transform: translate(-50%, -75%) rotateX(0deg);
+            transform: translate(-50%, -75%) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -75%);
+       -moz-transform: translate(-50%, -75%);
+        -ms-transform: translate(-50%, -75%);
+         -o-transform: translate(-50%, -75%);
+            transform: translate(-50%, -75%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-51%, -75%);
+       -moz-transform: translate(-51%, -75%);
+        -ms-transform: translate(-51%, -75%);
+         -o-transform: translate(-51%, -75%);
+            transform: translate(-51%, -75%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(-49%, -75%);
+       -moz-transform: translate(-49%, -75%);
+        -ms-transform: translate(-49%, -75%);
+         -o-transform: translate(-49%, -75%);
+            transform: translate(-49%, -75%);
+  }
+}
+
+.modal {
+  position: absolute;
+
+  display: none;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
 
 .modal-search {
   top: 37px;
@@ -806,10 +859,6 @@ input[type="search"]::placeholder {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.overlay:target {
-  display: none;
-}
-
 .modal-feedback {
   position: absolute;
   top: 50%;
@@ -828,11 +877,13 @@ input[type="search"]::placeholder {
   text-align: left;
 
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-       -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -75%);
+     -moz-transform: translate(-50%, -75%);
+      -ms-transform: translate(-50%, -75%);
+       -o-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
+
+  animation: stretchVertical 0.6s;
 }
 
 .modal-feedback h3 {
@@ -897,7 +948,7 @@ input[type="search"]::placeholder {
   width: 428px;
   height: 155px;
   margin-bottom: 25px;
-  padding: 0 15px;
+  padding: 13px 15px;
 
   border-radius: 5px;
 }
@@ -914,6 +965,69 @@ input[type="search"]::placeholder {
   border-radius: 25px;
 }
 
+.modal-show {
+  display: block;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.feedback-form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.feedback-form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.feedback-form input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.feedback-form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #999999;
+}
+
+.feedback-form textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.feedback-form textarea::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.feedback-form textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.feedback-form textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+}
 
 /* ------------------ breadcrumbs -----------------------*/
 
@@ -1277,6 +1391,7 @@ input[type="search"]::placeholder {
 
   text-align: left;
 
+  background-color: #92cdff;
   background-image: url("../img/index-mail-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1357,10 +1472,15 @@ input[type="search"]::placeholder {
   margin: 0 auto;
 }
 
+.container-map .map-iframe {
+  position: absolute;
+}
+
 .address {
   position: absolute;
   top: 63px;
   right: 27px;
+  z-index: 2;
 
   width: 252px;
   padding: 28px 25px 32px 25px;
@@ -1488,8 +1608,11 @@ input[type="search"]::placeholder {
 
   -webkit-appearance: none;
      -moz-appearance: none;
-      -ms-appearance: none;
           appearance: none;
+}
+
+.sorting-list::-ms-expand {
+  display: none;
 }
 
 .sorting-list:focus,
