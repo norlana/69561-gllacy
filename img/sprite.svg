@@ -97,6 +97,14 @@
 			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
 	</g>
   </symbol>
+  
+  <symbol id="checkbox-disabled-svg" viewBox="0 0 27 23">
+	<g>
+		<polygon fill="#b5c4bc" points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		<path fill="#b5c4bc" d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	</g>
+  </symbol>
 
   <view id="hit-svg-view" viewBox="0 0 61 61" />
   <view id="ice-cream-svg-view" viewBox="0 80 49 49" />
@@ -108,6 +116,7 @@
   <view id="down-hover-svg-view" viewBox="0 440 11 10" />
   <view id="checkbox-svg-view" viewBox="0 500 24 20" />
   <view id="checkbox-hover-svg-view" viewBox="0 560 24 20" />
+  <view id="checkbox-disabled-svg-view" viewBox="0 620 24 20" />
 
   <use xlink:href="#hit-svg" width="61" height="61" x="0" y="0"></use>
   <use xlink:href="#ice-cream-svg" width="49" height="49" x="0" y="80"></use>
@@ -119,4 +128,5 @@
   <use xlink:href="#down-hover-svg" width="11" height="10" x="0" y="440"></use>
   <use xlink:href="#checkbox-svg" width="24" height="20" x="0" y="500"></use>
   <use xlink:href="#checkbox-hover-svg" width="24" height="20" x="0" y="560"></use>
+  <use xlink:href="#checkbox-disabled-svg" width="24" height="20" x="0" y="620"></use>
 </svg>

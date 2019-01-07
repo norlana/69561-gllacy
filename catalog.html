@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page-catalog">
+<body class="page-inner">
 
   <header class="header container">
      <a class="header-logo" href="index.html">
@@ -19,11 +19,11 @@
       <!-- ====================== Main-menu START ========================== -->
       <ul class="main-menu">
         <li class="main-menu-item">
-          <a class="catalog-nav" href="/catalog">Каталог</a>
+          <a class="current-link" href="/catalog">Каталог</a>
           <ul class="submenu">
-            <li class="submenu-item highlight"><a href="#">Новинки</a></li>
-            <li class="submenu-item"><a class="current-link" href="catalog.html">Сливочное</a></li>
-            <li class="submenu-item"><a href="#">Щербеты</a></li>
+            <li class="submenu-item"><a href="#">Новинки</a></li>
+            <li class="submenu-item"><a href="catalog.html">Сливочное</a></li>
+            <li class="submenu-item"><a class="current-link" href="#">Щербеты</a></li>
             <li class="submenu-item"><a href="#">Фруктовый лед</a></li>
             <li class="submenu-item"><a href="#">Мелорин</a></li>
           </ul>
@@ -100,7 +100,7 @@
                   <tr>
                     <td class="button-cell"><button class="delete-item" type="button"><span class="visually-hidden">Удалить</span></button>
                     </td>
-                    <td class="img-cell"><img src="img/basket-preview1.png" alt="Пломбир с апельсиновым джемом"></td>
+                    <td class="img-cell"><img src="img/basket-preview1.png" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
                     <td class="text-cell">
                       <a href="#">Пломбир с апельсиновым джемом</a>
                     </td>
@@ -111,7 +111,7 @@
                     <td class="button-cell">
                       <button class="delete-item" type="button"><span class="visually-hidden">Удалить</span></button>
                     </td>
-                    <td class="img-cell"><img src="img/basket-preview2.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td class="img-cell"><img src="img/basket-preview2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
                     <td class="text-cell">
                       <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
                     </td>
@@ -150,7 +150,7 @@
     <!-- ================== Filters START =========================== -->
     <aside class="filters">
       <h2 class="visually-hidden">Фильтр продукции</h2>
-      <form class="filters-form" action="/filters" method="get">
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="filter-type sorting">
           <legend>Сортировка</legend>
             <select class="sorting-list" id="sorting-list" name="sorting-list">
@@ -172,28 +172,28 @@
         <fieldset class="filter-type fat">
           <legend>Жирность</legend>
           <div class="filter-wrap">
-            <input class="visually-hidden" id="zero" type="radio" name="fat-percent" value="0" >
+            <input class="visually-hidden" id="zero" type="radio" name="fat-percent" value="0">
             <label for="zero">0%</label>
-            <input class="visually-hidden" id="less-ten" type="radio" name="fat-percent" value="< 10" checked>
+            <input class="visually-hidden" id="less-ten" type="radio" name="fat-percent" value="less 10%" checked>
             <label for="less-ten">до 10%</label>
-            <input class="visually-hidden" id="less-thirty" type="radio" name="fat-percent" value="< 30">
+            <input class="visually-hidden" id="less-thirty" type="radio" name="fat-percent" value="less 30%">
             <label for="less-thirty">до 30%</label>
-            <input class="visually-hidden" id="more-thirty" type="radio" name="fat-percent" value="> 30">
+            <input class="visually-hidden" id="more-thirty" type="radio" name="fat-percent" value="over 30%">
             <label for="more-thirty">выше 30%</label>
           </div>
         </fieldset>
         <fieldset class="filter-type filling">
           <legend>Наполнители</legend>
           <div class="filter-wrap">
-            <input class="visually-hidden" id="choco" type="checkbox" checked>
+            <input class="visually-hidden" id="choco" type="checkbox" name="choco" checked>
             <label for="choco">шоколадные</label>
-            <input class="visually-hidden" id="sugar" type="checkbox" checked>
+            <input class="visually-hidden" id="sugar" type="checkbox" name="sugar" checked>
             <label for="sugar">сахарные присыпки</label>
-            <input class="visually-hidden" id="fruits" type="checkbox">
+            <input class="visually-hidden" id="fruits" type="checkbox" name="fruits">
             <label for="fruits">фрукты</label>
-            <input class="visually-hidden" id="syrups" type="checkbox">
+            <input class="visually-hidden" id="syrups" type="checkbox" name="syrups">
             <label for="syrups">сиропы</label>
-            <input class="visually-hidden" id="jam" type="checkbox">
+            <input class="visually-hidden" id="jam" type="checkbox" name="jam">
             <label for="jam">джемы</label>
           </div>
         </fieldset>
@@ -380,10 +380,10 @@
       <nav class="footer-nav">
         <ul class="footer-menu info-list">
           <li class="footer-menu-item"><a href="#">Для поставщиков</a></li>
-          <li class="footer-menu-item"><a href="#">О производстве</a></li>
+          <li class="footer-menu-item"><a href="#">Наши документы</a></li>
           </ul>
           <ul class="footer-menu docs-list">
-          <li class="footer-menu-item"><a href="#">Наши документы</a></li>
+          <li class="footer-menu-item"><a href="#">О производстве</a></li>
           <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
         </ul>
       </nav>
@@ -468,7 +468,6 @@
 		</g>
   </symbol>
 </svg>
-
 
 </body>
 
